@@ -1,0 +1,199 @@
+.header {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 0 200px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+    @media screen and (max-width: 1440px) {
+        padding: 0 20px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        height: 56px;
+        padding: 0 10px;
+    }
+
+    &__logo {
+        cursor: pointer;
+        height: 28px;
+        width: auto;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+
+        &__link {
+            cursor: pointer;
+            margin-left: 30px;
+            display: flex;
+            align-items: center;
+
+            &:first-child {
+                margin: unset;
+            }
+
+            &__icon {
+                margin-right: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                ion-icon {
+                    font-size: 18px;
+                }
+            }
+
+            &__title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 16px;
+            }
+
+            &__btn {
+                margin-left: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        &__lang {
+            cursor: pointer;
+            position: relative;
+            margin-left: 30px;
+            display: flex;
+            align-items: center;
+            transition: all ease-in-out 0.4s;
+
+            &__icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                ion-icon {
+                    font-size: 18px;
+                }
+            }
+
+            &__title {
+                margin: 0 4px;
+                font-size: 16px;
+            }
+
+            &__arrow {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                ion-icon {
+                    font-size: 18px;
+                }
+            }
+
+            &__dropdown {
+                z-index: 10;
+                position: absolute;
+                top: 160%;
+                right: 0;
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                overflow: hidden;
+                color: black;
+                background-color: white;
+
+                &__row {
+                    cursor: pointer;
+                    width: 100%;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 20px;
+
+                    &:hover {
+                        background-color: #f7f7f7;
+                    }
+
+                    &:first-child {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                    }
+
+                    ion-icon {
+                        font-size: 20px;
+                        border-radius: 50%;
+                        color: white;
+                        background-color: green;
+                    }
+                }
+            }
+        }
+    }
+
+    &__burger {
+        display: none;
+        align-items: center;
+        justify-content: center;
+
+        ion-icon {
+            font-size: 30px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            display: flex;
+        }
+    }
+
+    &__dropdown {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 200px;
+        background-color: #f7f7f7;
+
+        @media screen and (max-width: 1440px) {
+            padding: 40px 20px;
+            justify-content: space-evenly;
+        }
+
+        @media screen and (max-width: 1000px) {
+            display: none;
+        }
+
+        &__img {
+            height: 25px;
+            width: auto;
+        }
+
+        &__navlink {
+            font-size: 15px;
+        }
+    }
+}
+
+.dropdown__lang--closed {
+    display: none;
+    height: 0;
+}

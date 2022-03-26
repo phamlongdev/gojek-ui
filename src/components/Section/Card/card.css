@@ -1,0 +1,51 @@
+.card {
+  width: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+@media screen and (max-width: 1100px) {
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+.card:hover {
+  cursor: pointer;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 16px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 16px;
+}
+
+.card__img {
+  margin: 20px auto;
+  width: 140px;
+  height: auto;
+}
+
+.card__title {
+  margin: 30px 0 20px 0;
+  width: 100%;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 600;
+}
+
+.card__content {
+  width: 100%;
+  font-size: 14px;
+}
+/*# sourceMappingURL=card.css.map */

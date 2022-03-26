@@ -1,0 +1,319 @@
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 200px;
+    color: white;
+    background-color: #101820;
+
+    @media screen and (max-width: 1440px) {
+        padding: 60px 20px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        padding: 20px 10px;
+    }
+
+    &__top {
+        margin-bottom: 60px;
+        width: 100%;
+        display: flex;
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+        }
+
+        &__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @media screen and (max-width: 1000px) {
+                margin-bottom: 50px;
+            }
+
+            &__nav {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                &__logo {
+                    margin-bottom: 50px;
+                    height: 54px;
+                    width: auto;
+                }
+
+                &__navlink {
+                    display: flex;
+
+                    &__left {
+                        display: flex;
+                        flex-direction: column;
+
+                        &__link {
+                            cursor: pointer;
+                            margin: 10px 0;
+                            width: fit-content;
+                            font-size: 16px;
+
+                            &:first-child {
+                                margin-top: unset;
+                            }
+                        }
+                    }
+
+                    &__right {
+                        cursor: pointer;
+                        margin-left: 100px;
+                        display: flex;
+                        font-size: 16px;
+
+                        @media screen and (max-width: 1000px) {
+                            margin-left: 50px;
+                        }
+                    }
+                }
+            }
+
+            &__info {
+                cursor: default;
+                margin-top: 140px;
+                display: flex;
+                flex-direction: column;
+
+                @media screen and (max-width: 1000px) {
+                    margin-top: 50px;
+                }
+
+                &__row {
+                    margin: 5px 0;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        &__right {
+            margin-left: 160px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            @media screen and (max-width: 1000px) {
+                margin: 0;
+            }
+
+            &__connect {
+                margin: 0 0 60px 0;
+                display: flex;
+                flex-direction: column;
+
+                &__title {
+                    cursor: default;
+                    font-size: 18px;
+                    
+                    @media screen and (max-width: 1000px) {
+                        text-align: center;
+                    }
+                }
+
+                &__list {
+                    margin-top: 24px;
+                    display: flex;
+                    align-items: center;
+
+                    @media screen and (max-width: 1000px) {
+                        justify-content: space-evenly;
+                    }
+
+                    &__icon {
+                        cursor: pointer;
+                        margin-right: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        @media screen and (max-width: 1000px) {
+                            margin-right: 0;
+                        }
+
+                        &:last-child {
+                            margin-right: unset;
+                        }
+
+                        ion-icon {
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+
+            &__download {
+                margin: 0 0 60px 0;
+                display: flex;
+                flex-direction: column;
+
+                &__title {
+                    cursor: default;
+                    font-size: 18px;
+
+                    @media screen and (max-width: 1000px) {
+                        text-align: center;
+                    }
+                }
+
+                &__list {
+                    margin-top: 24px;
+                    display: flex;
+                    align-items: center;
+
+                    @media screen and (max-width: 1000px) {
+                        flex-direction: column;
+                    }
+
+                    &__logo {
+                        cursor: pointer;
+                        height: 54px;
+
+                        &:last-child {
+                            margin-left: 20px;
+
+                            @media screen and (max-width: 1000px) {
+                                margin: 20px 0 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &__certificated {
+                display: flex;
+                flex-direction: column;
+
+                &__title {
+                    cursor: default;
+                    font-size: 18px;
+                    
+                    @media screen and (max-width: 1000px) {
+                        text-align: center;
+                    }
+                }
+
+                &__list {
+                    margin-top: 24px;
+                    display: flex;
+                    align-items: center;
+
+                    @media screen and (max-width: 1000px) {
+                        flex-direction: column;
+                    }
+
+                    &__logo {
+                        cursor: pointer;
+                        height: 60px;
+
+                        &:last-child {
+                            margin-left: 20px;
+
+                            @media screen and (max-width: 1000px) {
+                                margin: 20px 0 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            content: "";
+            height: 1px;
+            background-color: rgba($color: #ffffff, $alpha: 0.1);
+        }
+
+        &__option {
+            margin: 40px 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            @media screen and (max-width: 1000px) {
+                flex-direction: column;
+            }
+
+            &__combobox {
+                display: flex;
+                align-items: center;
+
+                &:last-child {
+                    margin-left: 60px;
+
+                    @media screen and (max-width: 1000px) {
+                        margin: 30px 0 0 0;
+                    }
+                }
+                
+                &__icon {
+                    margin-right: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    ion-icon {
+                        font-size: 24px;
+                    }
+                }
+
+                &__select {
+                    cursor: pointer;
+                    width: 200px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    border-radius: 30px;
+                    border: 1px solid rgba($color: #ffffff, $alpha: 0.3);
+
+                    &__title {
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 20px;
+                        font-size: 15px;
+                    }
+
+                    &__arrow {
+                        width: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        ion-icon {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__copyright {
+            cursor: default;
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            @media screen and (max-width: 1000px) {
+                justify-content: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,211 @@
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 100px 200px;
+}
+
+@media screen and (max-width: 1440px) {
+  .section {
+    padding: 60px 20px;
+  }
+}
+
+.section__intro {
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .section__intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 60px;
+  }
+}
+
+.section__intro__img {
+  width: 570px;
+  height: auto;
+  border-radius: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .section__intro__img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.section__intro__text {
+  margin-left: 95px;
+}
+
+@media screen and (max-width: 1440px) {
+  .section__intro__text {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section__intro__text {
+    margin: 20px 0 0 0;
+  }
+}
+
+.section__intro__text__row {
+  font-size: 16px;
+}
+
+.section__intro__text__row:first-child {
+  margin-bottom: 30px;
+}
+
+.section__service {
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+  .section__service {
+    margin-bottom: 60px;
+  }
+}
+
+.section__service__title {
+  margin-bottom: 30px;
+  font-size: 34px;
+  line-height: 34px;
+  font-weight: 600;
+}
+
+.section__service__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1100px) {
+  .section__service__list {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.section__download {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .section__download {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 60px;
+  }
+}
+
+.section__download__img {
+  width: 570px;
+  height: auto;
+  border-radius: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .section__download__img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.section__download__info {
+  margin-left: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 1440px) {
+  .section__download__info {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section__download__info {
+    margin: 20px 0 0 0;
+  }
+}
+
+.section__download__info__title {
+  cursor: default;
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.section__download__info__description {
+  cursor: default;
+  margin: 40px 0;
+  font-size: 16px;
+}
+
+.section__download__info__btn {
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #00880D;
+  border-radius: 30px;
+  padding: 0 26px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #00880D;
+  background-color: white;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.section__download__info__btn:hover {
+  color: white;
+  background-color: #00880D;
+}
+/*# sourceMappingURL=section.css.map */

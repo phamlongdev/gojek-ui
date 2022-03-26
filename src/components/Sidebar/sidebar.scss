@@ -1,0 +1,195 @@
+.sidebar {
+    z-index: 11;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    padding: 20px;
+    width: 100%;
+    color: white;
+    background-color: #101820;
+    transform: translateX(0);
+    transition: transform ease-in-out 0.4s;
+
+    @media screen and (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__img {
+            height: 24px;
+            width: auto;
+        }
+
+        &__btn--close {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            ion-icon {
+                font-size: 24px;
+            }
+        }
+    }
+
+    &__lang {
+        margin: 40px 0 30px 0;
+        display: flex;
+        flex-direction: column;
+        
+        &__label {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            &__title {
+                font-size: 16px;
+                line-height: 16px;
+            }
+
+            &__icon {
+                margin-left: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                ion-icon {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &__dropdown {
+            margin-top: 20px;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            transition: height ease-in-out 0.2s;
+            overflow: hidden;
+
+            &__option {
+                width: 120px;
+                height: 46px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid #00880D;
+                border-radius: 30px;
+                color: #00880D;
+                transition: all ease-in-out 0.2s;
+            }
+        }
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+
+        &__row {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+
+            &__title {
+                font-size: 16px;
+                line-height: 16px;
+            }
+
+            &__icon {
+                margin-left: 2px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                ion-icon {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    &__sub {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 80px 0 0 20px;
+        background-color: #101820;
+        transform: translateX(0);
+        transition: transform ease-in-out 0.4s;
+
+        &__header {
+            margin-bottom: 20px;
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            &::after {
+                position: absolute;
+                top: 150%;
+                left: 0;
+                right: 0;
+                content: "";
+                width: 100%;
+                height: 1.5px;
+                background-color: rgba($color: #ffffff, $alpha: 0.3);
+            }
+            
+            &__icon {
+                margin-right: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                ion-icon {
+                    font-size: 24px;
+                }
+            }
+
+            &__title {
+                font-size: 18px;
+                line-height: 18px;
+                font-weight: 600;
+            }
+        }
+
+        &__row {
+            margin-top: 20px;
+            width: 100%;
+            padding-left: 20px;
+        }
+    }
+}
+
+.closed {
+    transform: translateX(-100%);
+}
+
+.sidebar__dropdown__lang--closed {
+    height: 0;
+}
+
+.sidebar__sub--closed {
+    transform: translateX(-100%);
+}
+
+.active--lang {
+    color: white;
+    background-color: #00880D;
+}
